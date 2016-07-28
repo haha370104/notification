@@ -1,0 +1,18 @@
+PODS:
+  - Masonry (1.0.1)
+  - MGSwipeTableCell (1.5.5)
+  - UITableView+FDTemplateLayoutCell (1.4)
+
+DEPENDENCIES:
+  - Masonry
+  - MGSwipeTableCell
+  - UITableView+FDTemplateLayoutCell
+
+SPEC CHECKSUMS:
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MGSwipeTableCell: bafeb5f351124544c9364ecbdf24c7b06a37d340
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+
+PODFILE CHECKSUM: ddeff91c8820ad96d20512c5ecb66d2b2a9311aa
+
+COCOAPODS: 1.0.1

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1463D27FAFA4F701623C5FA2 /* Pods_notification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3EF3AB0A48E314C3422AF6 /* Pods_notification.framework */; };
+		7522C9071D489F20002AB438 /* HeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522C9061D489F20002AB438 /* HeaderModel.m */; };
 		753340151D485CD4001F65A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 753340141D485CD4001F65A9 /* main.m */; };
 		753340181D485CD4001F65A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 753340171D485CD4001F65A9 /* AppDelegate.m */; };
 		7533401B1D485CD4001F65A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7533401A1D485CD4001F65A9 /* ViewController.m */; };
@@ -15,6 +17,9 @@
 		753340231D485CD4001F65A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753340211D485CD4001F65A9 /* LaunchScreen.storyboard */; };
 		7533402E1D485CD4001F65A9 /* notificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7533402D1D485CD4001F65A9 /* notificationTests.m */; };
 		753340391D485CD4001F65A9 /* notificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 753340381D485CD4001F65A9 /* notificationUITests.m */; };
+		753340481D485FBD001F65A9 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 753340471D485FBD001F65A9 /* CellModel.m */; };
+		7533404E1D48629C001F65A9 /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7533404D1D48629C001F65A9 /* NotificationTableViewCell.m */; };
+		753340511D4888D8001F65A9 /* NotificationTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 753340501D4888D8001F65A9 /* NotificationTableViewHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24F61170828BD29150C4855E /* Pods-notification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notification/Pods-notification.debug.xcconfig"; sourceTree = "<group>"; };
+		2D3EF3AB0A48E314C3422AF6 /* Pods_notification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7522C9051D489F20002AB438 /* HeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderModel.h; sourceTree = "<group>"; };
+		7522C9061D489F20002AB438 /* HeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderModel.m; sourceTree = "<group>"; };
 		753340101D485CD4001F65A9 /* notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		753340141D485CD4001F65A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		753340161D485CD4001F65A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,13 @@
 		753340341D485CD4001F65A9 /* notificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = notificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		753340381D485CD4001F65A9 /* notificationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = notificationUITests.m; sourceTree = "<group>"; };
 		7533403A1D485CD4001F65A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753340461D485FBD001F65A9 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		753340471D485FBD001F65A9 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		7533404C1D48629C001F65A9 /* NotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewCell.h; sourceTree = "<group>"; };
+		7533404D1D48629C001F65A9 /* NotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
+		7533404F1D4888D8001F65A9 /* NotificationTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewHeader.h; sourceTree = "<group>"; };
+		753340501D4888D8001F65A9 /* NotificationTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewHeader.m; sourceTree = "<group>"; };
+		EC34721E37A7523DB9E4A54F /* Pods-notification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notification.release.xcconfig"; path = "Pods/Target Support Files/Pods-notification/Pods-notification.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1463D27FAFA4F701623C5FA2 /* Pods_notification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,8 @@
 				7533402C1D485CD4001F65A9 /* notificationTests */,
 				753340371D485CD4001F65A9 /* notificationUITests */,
 				753340111D485CD4001F65A9 /* Products */,
+				A80F658E8A450B1DC8C9EC2E /* Pods */,
+				E2B84ED1C2A2317A3EE37523 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +129,14 @@
 				753340211D485CD4001F65A9 /* LaunchScreen.storyboard */,
 				753340241D485CD4001F65A9 /* Info.plist */,
 				753340131D485CD4001F65A9 /* Supporting Files */,
+				753340461D485FBD001F65A9 /* CellModel.h */,
+				753340471D485FBD001F65A9 /* CellModel.m */,
+				7533404C1D48629C001F65A9 /* NotificationTableViewCell.h */,
+				7533404D1D48629C001F65A9 /* NotificationTableViewCell.m */,
+				7533404F1D4888D8001F65A9 /* NotificationTableViewHeader.h */,
+				753340501D4888D8001F65A9 /* NotificationTableViewHeader.m */,
+				7522C9051D489F20002AB438 /* HeaderModel.h */,
+				7522C9061D489F20002AB438 /* HeaderModel.m */,
 			);
 			path = notification;
 			sourceTree = "<group>";
@@ -140,6 +167,23 @@
 			path = notificationUITests;
 			sourceTree = "<group>";
 		};
+		A80F658E8A450B1DC8C9EC2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24F61170828BD29150C4855E /* Pods-notification.debug.xcconfig */,
+				EC34721E37A7523DB9E4A54F /* Pods-notification.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2B84ED1C2A2317A3EE37523 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D3EF3AB0A48E314C3422AF6 /* Pods_notification.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7533403D1D485CD4001F65A9 /* Build configuration list for PBXNativeTarget "notification" */;
 			buildPhases = (
+				DEB851CDCB5765E76933FC1B /* [CP] Check Pods Manifest.lock */,
 				7533400C1D485CD4001F65A9 /* Sources */,
 				7533400D1D485CD4001F65A9 /* Frameworks */,
 				7533400E1D485CD4001F65A9 /* Resources */,
+				AE2A0859133EB15219A51656 /* [CP] Embed Pods Frameworks */,
+				8EF11CF6DA60CEA16ECCB636 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +254,7 @@
 				TargetAttributes = {
 					7533400F1D485CD4001F65A9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L5B4TBT7H9;
 					};
 					753340281D485CD4001F65A9 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -265,14 +313,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8EF11CF6DA60CEA16ECCB636 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-notification/Pods-notification-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE2A0859133EB15219A51656 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-notification/Pods-notification-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB851CDCB5765E76933FC1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7533400C1D485CD4001F65A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7533401B1D485CD4001F65A9 /* ViewController.m in Sources */,
+				753340511D4888D8001F65A9 /* NotificationTableViewHeader.m in Sources */,
 				753340181D485CD4001F65A9 /* AppDelegate.m in Sources */,
+				7533404E1D48629C001F65A9 /* NotificationTableViewCell.m in Sources */,
+				7522C9071D489F20002AB438 /* HeaderModel.m in Sources */,
 				753340151D485CD4001F65A9 /* main.m in Sources */,
+				753340481D485FBD001F65A9 /* CellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,23 +511,33 @@
 		};
 		7533403E1D485CD4001F65A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F61170828BD29150C4855E /* Pods-notification.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = notification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		7533403F1D485CD4001F65A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC34721E37A7523DB9E4A54F /* Pods-notification.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = notification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +606,7 @@
 				7533403F1D485CD4001F65A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753340401D485CD4001F65A9 /* Build configuration list for PBXNativeTarget "notificationTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +615,7 @@
 				753340421D485CD4001F65A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753340431D485CD4001F65A9 /* Build configuration list for PBXNativeTarget "notificationUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +624,7 @@
 				753340451D485CD4001F65A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
