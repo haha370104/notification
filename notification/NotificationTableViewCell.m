@@ -21,20 +21,6 @@
 
 #pragma mark - init -
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if(self){
-        [self.contentView addSubview:self.senderInfoLabel];
-        [self.contentView addSubview:self.timeInfoLabel];
-        [self.contentView addSubview:self.messageInfoLabel];
-        [self setupConstraints];
-        self.contentView.backgroundColor = [UIColor grayColor];
-        self.backgroundColor = [UIColor grayColor];
-    }
-    return self;
-}
-
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

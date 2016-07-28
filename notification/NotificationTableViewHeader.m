@@ -21,20 +21,6 @@
 
 #pragma mark - init -
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if(self){
-        [self.contentView addSubview:self.headerIcon];
-        [self.contentView addSubview:self.headerTitle];
-        [self.contentView addSubview:self.headerCloseButton];
-        self.contentView.backgroundColor = [UIColor darkGrayColor];
-        self.headerIcon.layer.cornerRadius = 3;
-        self.headerIcon.clipsToBounds = YES;
-    }
-    return self;
-}
-
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithReuseIdentifier:reuseIdentifier];
