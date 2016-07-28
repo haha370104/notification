@@ -80,17 +80,15 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     NotificationTableViewHeader *notificationHeader = [tableView dequeueReusableHeaderFooterViewWithIdentifier:NSStringFromClass([NotificationTableViewHeader class])];
-    notificationHeader.index = section;
-    self.headerSource[section].index = section;
-    [notificationHeader setAction:^(NSInteger index) {
+    [notificationHeader setAction:^(NotificationTableViewHeader *header) {
         NSInteger section = -1;
-        for(int i = 0;i < self.headerSource.count; i++){
-            if(self.headerSource[i].index == index){
+        for(int i = 0; i < [tableView numberOfSections]; i++){
+            if([tableView headerViewForSection:i] == header){
                 section = i;
+                [self deleteSection:section scrollAutoFlag:YES];
                 break;
             }
         }
-        [self deleteSection:section scrollAutoFlag:YES];
     }];
     notificationHeader.headerTitle.text = self.headerSource[section].notificationHeaderTitle;
     notificationHeader.headerIcon.image = self.headerSource[section].notificationHeaderImage;

@@ -41,7 +41,7 @@
 - (void)handleClick
 {
     if(self.action){
-        self.action(self.index);
+        self.action(self);
     }
 }
 

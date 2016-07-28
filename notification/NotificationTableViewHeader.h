@@ -14,6 +14,6 @@
 @property (nonatomic, strong, readonly) UILabel *headerTitle;
 @property (nonatomic, strong, readonly) UIView *headerCloseButton;
 @property (nonatomic, assign) NSInteger index;
-@property (nonatomic, copy) void (^action)(NSInteger section);
+@property (nonatomic, copy) void (^action)(NotificationTableViewHeader *);
 
 @end

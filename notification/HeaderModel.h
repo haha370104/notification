@@ -13,7 +13,6 @@
 
 @property (nonatomic, strong) NSString *notificationHeaderTitle;
 @property (nonatomic, strong) UIImage *notificationHeaderImage;
-@property (nonatomic, assign) NSInteger index;
 
 - (instancetype)initWithHeaderTitle:(NSString *)headerTitle headerImage:(UIImage *)headerImage;
 
