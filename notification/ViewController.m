@@ -51,15 +51,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger index = indexPath.row;
-    NSInteger sectionNum = indexPath.section;
     NotificationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([NotificationTableViewCell class]) forIndexPath:indexPath];
-    cell.senderInfoLabel.text = self.dataSource[sectionNum][index].senderInfoString;
-    cell.messageInfoLabel.text = self.dataSource[sectionNum][index].messageInfoString;
-    NSDateFormatter *dateFormatter =[[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"YYYY/MM/dd hh:mm:ss"];
-    NSString *dateString = [dateFormatter stringFromDate:self.dataSource[sectionNum][index].timeInfo];
-    cell.timeInfoLabel.text = dateString;
+    [self configWithNotificationTableViewCell:cell indexPath:indexPath];
     return cell;
 }
 
@@ -68,15 +61,8 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat height = [tableView fd_heightForCellWithIdentifier:NSStringFromClass([NotificationTableViewCell class]) configuration:^(id cell) {
-        NSInteger index = indexPath.row;
-        NSInteger sectionNum = indexPath.section;
         NotificationTableViewCell *_cell = (NotificationTableViewCell *)cell;
-        _cell.senderInfoLabel.text = self.dataSource[sectionNum][index].senderInfoString;
-        _cell.messageInfoLabel.text = self.dataSource[sectionNum][index].messageInfoString;
-        NSDateFormatter *dateFormatter =[[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"YYYY/MM/dd hh:mm:ss"];
-        NSString *dateString = [dateFormatter stringFromDate:self.dataSource[sectionNum][index].timeInfo];
-        _cell.timeInfoLabel.text = dateString;
+        [self configWithNotificationTableViewCell:_cell indexPath:indexPath];
     }];
     return height;
 }
@@ -179,7 +165,18 @@
     if(flag && section < self.dataSource.count){
         [self.notificationTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:section] atScrollPosition:UITableViewScrollPositionTop animated:YES];
     }
+}
 
+- (void)configWithNotificationTableViewCell:(NotificationTableViewCell *)cell indexPath:(NSIndexPath *)indexPath
+{
+    NSInteger index = indexPath.row;
+    NSInteger sectionNum = indexPath.section;
+    cell.senderInfoLabel.text = self.dataSource[sectionNum][index].senderInfoString;
+    cell.messageInfoLabel.text = self.dataSource[sectionNum][index].messageInfoString;
+    NSDateFormatter *dateFormatter =[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"YYYY/MM/dd hh:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:self.dataSource[sectionNum][index].timeInfo];
+    cell.timeInfoLabel.text = dateString;
 }
 
 @end
